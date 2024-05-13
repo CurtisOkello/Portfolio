@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@9008 family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --header-height: 6rem;
+
+    /*variables in css */
+
+    --first-color:hsl(350, 98%, 64%);
+    --title-color:hsl(0, 0%, 100%);
+    --text-color:hsl( 0, 0%, 77%);
+    --body-color:hsl( 0, 0%, 6%);
+    --container-color:hsl( 0, 0%, 10%);
+    --border-color:hsl( 0, 0%, 100%, 0.2);
+
+    /*font and Typogtraphy */
+     
+    --body-font: 'Poppins' , sans-serif;
+    --second-font: 'Montserrat' , sans-serif;
+
+    --big-fotn-size: 4.5rem;
+    --h1-font-size: 3.75rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 
+}
