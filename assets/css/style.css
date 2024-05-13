@@ -19,5 +19,47 @@
     --big-fotn-size: 4.5rem;
     --h1-font-size: 3.75rem;
     --h2-font-size: 1.75rem;
-    --h3-font-size: 
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 1rem;
+    --smaller--font-size: 0.0875rem;
+
+
+    /*font weight*/
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-900: 900;
+
+    /*Transition */
+    --transition: cubic-bezier(0.05, 0.2, 0.1, 1);
+
+    /*border Radius*/
+    --radius: 0.5rem;
+    
+    /*Z Index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
 }
+    /* Responsive Typography*/
+@media screen and (max-width:992px) {
+    
+}
+/*base */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+body {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--noraml-font-size);
+    font-weight: var(--weight-300);
+}
+
