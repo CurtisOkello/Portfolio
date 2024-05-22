@@ -42,9 +42,9 @@ const sendEmail = () => {
 
     //check if field has a value 
     if (
-        contactName.value === ' ' ||
+        contactName.value === '' ||
         contactEmail.value === '' ||
-        contactSubject.value === ' ' ||
+        contactSubject.value === '' ||
         contactMessage.value === '' 
     )
     { //show message 
