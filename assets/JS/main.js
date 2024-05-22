@@ -52,8 +52,34 @@ const sendEmail = () => {
     }
 
     else {
+        //serviceID - template - #form - publickey
+        emailjs.sendForm
+        (
+            'service_igmg0rw',
+            'template_xn4uxea',
+            '#contact-form',
+            'CE86CvNFWntGd-TO6'
+        ).then(()  => {
+            // show message and color, window + dot to open emoji
+            errorMessage.classList.add('color-first');
+            errorMessage.textContent = 'Message sent ✔️';
 
+            //Remove message after 5 seconds
+            setTimeout(() => {
+                errorMessage.textContent = '';
+            }, 5000);
+        },
+        (error) => {
+            alert('OOPs!! SOEMTHING WENT WRONG...', error)
+        }
+    );
+
+    //clear input fields
+    contactName.value = '';
+    contactEmail.value = '';
+    contactSubject.value = '';
+    contactMessage.value = '';
     }
-}
+};
 
 contactForm.addEventListener('submit', sendEmail);
