@@ -375,3 +375,7 @@ input {
     font-size: var(--small-font-size) ;
     font-weight: var(--weight-400);
 }
+
+.color-first {
+    color: var(--first-color);
+}

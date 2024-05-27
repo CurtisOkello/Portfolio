@@ -37,6 +37,8 @@ contactSubject = document.getElementById('contact-subject'),
 contactMessage = document.getElementById('contact-message'),
 errorMessage = document.getElementById('contact-message');
 
+
+/*The javascript is not sending the email but rather scrolling to the top */
 const sendEmail = () => {
     e.preventDefault();
 
@@ -51,7 +53,7 @@ const sendEmail = () => {
         errorMessage.textContent = 'write all the input fields'
     }
 
-    else {
+    else { 
         //serviceID - template - #form - publickey
         emailjs.sendForm
         (
