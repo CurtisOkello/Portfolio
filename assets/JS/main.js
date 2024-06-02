@@ -9,14 +9,22 @@
 /* CHANGE BACKGROUD HEADER */
 function scrollHeader() {
     const header = document.getElementById('header');
-    //when the scroll is greater than the view port height, add the scroll-header class to the header tag
+    //when the scroll is greater than the 80 view port height, add the scroll-header class to the header tag
     if (this.scrollY >= 80) header.classList.add('sroll-header');
     else header.classList.remove('scrool-header');
     }
 
     window.addEventListener('scroll', scrollHeader);
+// SHOW SCROLL UP 
 
+function scrolluP() {
+    const scrollUp = document.getElementById('scroll-up');
+    //when the scroll is greater than the 350 view port height, add the show-scroll class to the scroll-top class
+    if (this.scrollY >= 350) scrollUp.classList.add('show-sroll');
+    else scrollUp.classList.remove('show-scroll');
+    }
 
+    window.addEventListener('scroll', scrollUp);
 
 /* ABOUT */
 const tabs = document.querySelectorAll('[data-target]'),
